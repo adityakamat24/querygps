@@ -1,0 +1,49 @@
+# Large Database Files
+joinrank/imdb.sql
+joinrank/tpch_s1.sql
+
+# Virtual Environment
+joinrank_env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.venv
+
+# Model checkpoints and results (optional - uncomment if you don't want to track these)
+# joinrank/models/
+# joinrank/results/
+
+# Visualizations output (optional - uncomment if you don't want to track these)
+# joinrank/visualizations/
+
+# Data files - excluded to avoid large files in git
+joinrank/data/
+
+# External repositories (clone separately if needed)
+joinrank/join-order-benchmark/
+joinrank/tpch-dbgen/
+
+# OS
+.DS_Store
+Thumbs.db

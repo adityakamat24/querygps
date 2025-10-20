@@ -1,0 +1,16 @@
+{
+  "head_only": {
+    "10": {
+      "error": "FewShotRankingDataset.__init__() got an unexpected keyword argument 'query_complexity'"
+    },
+    "25": {
+      "error": "FewShotRankingDataset.__init__() got an unexpected keyword argument 'query_complexity'"
+    },
+    "50": {
+      "error": "FewShotRankingDataset.__init__() got an unexpected keyword argument 'query_complexity'"
+    },
+    "100": {
+      "error": "FewShotRankingDataset.__init__() got an unexpected keyword argument 'query_complexity'"
+    }
+  }
+}

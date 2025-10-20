@@ -1,0 +1,56 @@
+======================================================================
+FROM-SCRATCH BASELINE EXPERIMENTS
+======================================================================
+Device: cuda
+Batch size: 8
+Learning rate: 0.001
+Epochs: 30
+
+=== TRAINING FROM SCRATCH (10 SAMPLES) ===
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 10 ranking examples from 10 pairwise comparisons
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 9 ranking examples from 75 pairwise comparisons
+Train dataset: 10 examples
+Val dataset: 9 examples
+Total parameters: 741,377
+Trainable parameters: 741,377
+Traceback (most recent call last):
+  File "D:\querygps\joinrank\run_from_scratch_baseline.py", line 326, in <module>
+    main()
+  File "D:\querygps\joinrank\run_from_scratch_baseline.py", line 305, in main
+    results = train_from_scratch(sample_size, config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\querygps\joinrank\run_from_scratch_baseline.py", line 169, in train_from_scratch
+    scores = model(
+             ^^^^^^
+  File "C:\Users\twent\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\twent\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\querygps\joinrank\scripts\encoders.py", line 174, in forward
+    node_embeddings = self.encoder(x, edge_index, edge_attr)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\twent\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\twent\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\querygps\joinrank\scripts\encoders.py", line 49, in forward
+    x = self.convs[i](x, edge_index)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\twent\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\twent\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\twent\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch_geometric\nn\conv\gin_conv.py", line 88, in forward
+    out = out + (1 + self.eps) * x_r
+                ~~~~~~~~~~~~~^~~~~~~
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!

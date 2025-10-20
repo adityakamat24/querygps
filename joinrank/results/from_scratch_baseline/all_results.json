@@ -1,0 +1,56 @@
+{
+  "10": {
+    "sample_size": 10,
+    "training_time": 0.7291073799133301,
+    "parameter_counts": {
+      "total": 741377,
+      "trainable": 741377,
+      "trainable_ratio": 1.0
+    },
+    "best_val_loss": 1.0016816854476929,
+    "final_metrics": {
+      "ndcg@5": 0.7489151045058057,
+      "ndcg@3": 0.5031719903418567,
+      "ndcg@1": 0.3285713791847229,
+      "spearman": -0.23333333333333328,
+      "ndcg@5_std": 0.1300394328528448,
+      "spearman_std": 0.4055175020198813
+    }
+  },
+  "25": {
+    "sample_size": 25,
+    "training_time": 0.9437518119812012,
+    "parameter_counts": {
+      "total": 741377,
+      "trainable": 741377,
+      "trainable_ratio": 1.0
+    },
+    "best_val_loss": 0.9986931085586548,
+    "final_metrics": {
+      "ndcg@5": 0.870730834827356,
+      "ndcg@3": 0.7322436248348262,
+      "ndcg@1": 0.6541734337806702,
+      "spearman": 0.19999999999999998,
+      "ndcg@5_std": 0.11391701886485707,
+      "spearman_std": 0.4268749491621899
+    }
+  },
+  "50": {
+    "sample_size": 50,
+    "training_time": 2.2149720191955566,
+    "parameter_counts": {
+      "total": 741377,
+      "trainable": 741377,
+      "trainable_ratio": 1.0
+    },
+    "best_val_loss": 0.9972473680973053,
+    "final_metrics": {
+      "ndcg@5": 0.7827142790605025,
+      "ndcg@3": 0.6171697022281751,
+      "ndcg@1": 0.3601931929588318,
+      "spearman": -0.011111111111111082,
+      "ndcg@5_std": 0.14896562160715027,
+      "spearman_std": 0.5173531878587918
+    }
+  }
+}

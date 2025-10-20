@@ -1,0 +1,718 @@
+{
+  "summary": {
+    "best_strategies_by_sample_size": {
+      "10_samples": {
+        "strategy": "lora",
+        "ndcg@5": 0.7611827086346489
+      },
+      "25_samples": {
+        "strategy": "head_only",
+        "ndcg@5": 0.7612588353987715
+      },
+      "50_samples": {
+        "strategy": "head_only",
+        "ndcg@5": 0.8061431581639149
+      }
+    }
+  },
+  "strategy_comparison": {
+    "10_samples": {
+      "strategies": [
+        "head_only",
+        "adapters",
+        "lora"
+      ],
+      "metrics": {
+        "top1_accuracy": {
+          "head_only": 0.06666667014360428,
+          "adapters": 0.06666667014360428,
+          "lora": 0.0
+        },
+        "ndcg@5": {
+          "head_only": 0.7374067837410507,
+          "adapters": 0.7355340130704684,
+          "lora": 0.7611827086346489
+        },
+        "kendall_correlation": {
+          "head_only": -0.031111111111111103,
+          "adapters": 0.013333333333333341,
+          "lora": 0.013333333333333324
+        },
+        "ndcg@3": {
+          "head_only": 0.6627854189114967,
+          "adapters": 0.6605287952385129,
+          "lora": 0.6575688424267297
+        },
+        "ndcg@1": {
+          "head_only": 0.5788763602574666,
+          "adapters": 0.5692271550496419,
+          "lora": 0.5774619817733765
+        },
+        "spearman_correlation": {
+          "head_only": -0.02095238095238096,
+          "adapters": 0.013333333333333345,
+          "lora": 0.036190476190476197
+        },
+        "map": {
+          "head_only": 0.7696666666666666,
+          "adapters": 0.7715925925925926,
+          "lora": 0.7756666666666666
+        }
+      },
+      "best_strategy": {
+        "top1_accuracy": {
+          "strategy": "head_only",
+          "value": 0.06666667014360428
+        },
+        "ndcg@5": {
+          "strategy": "lora",
+          "value": 0.7611827086346489
+        },
+        "kendall_correlation": {
+          "strategy": "adapters",
+          "value": 0.013333333333333341
+        },
+        "ndcg@3": {
+          "strategy": "head_only",
+          "value": 0.6627854189114967
+        },
+        "ndcg@1": {
+          "strategy": "head_only",
+          "value": 0.5788763602574666
+        },
+        "spearman_correlation": {
+          "strategy": "lora",
+          "value": 0.036190476190476197
+        },
+        "map": {
+          "strategy": "lora",
+          "value": 0.7756666666666666
+        }
+      },
+      "summary": {
+        "strategy_wins": {
+          "head_only": 3,
+          "adapters": 1,
+          "lora": 3
+        },
+        "overall_best": "head_only"
+      }
+    },
+    "25_samples": {
+      "strategies": [
+        "head_only",
+        "adapters",
+        "lora"
+      ],
+      "metrics": {
+        "top1_accuracy": {
+          "head_only": 0.06666667014360428,
+          "adapters": 0.06666667014360428,
+          "lora": 0.06666667014360428
+        },
+        "ndcg@5": {
+          "head_only": 0.7612588353987715,
+          "adapters": 0.7555669196452274,
+          "lora": 0.7389875463211961
+        },
+        "kendall_correlation": {
+          "head_only": 0.08444444444444447,
+          "adapters": -0.013333333333333341,
+          "lora": 0.013333333333333341
+        },
+        "ndcg@3": {
+          "head_only": 0.6837783018768937,
+          "adapters": 0.5769340624047546,
+          "lora": 0.675130178020084
+        },
+        "ndcg@1": {
+          "head_only": 0.5392287969589233,
+          "adapters": 0.5178123712539673,
+          "lora": 0.6377694845199585
+        },
+        "spearman_correlation": {
+          "head_only": 0.08952380952380956,
+          "adapters": -0.043809523809523805,
+          "lora": 0.005714285714285735
+        },
+        "map": {
+          "head_only": 0.7861111111111112,
+          "adapters": 0.7441666666666668,
+          "lora": 0.7817777777777777
+        }
+      },
+      "best_strategy": {
+        "top1_accuracy": {
+          "strategy": "head_only",
+          "value": 0.06666667014360428
+        },
+        "ndcg@5": {
+          "strategy": "head_only",
+          "value": 0.7612588353987715
+        },
+        "kendall_correlation": {
+          "strategy": "head_only",
+          "value": 0.08444444444444447
+        },
+        "ndcg@3": {
+          "strategy": "head_only",
+          "value": 0.6837783018768937
+        },
+        "ndcg@1": {
+          "strategy": "lora",
+          "value": 0.6377694845199585
+        },
+        "spearman_correlation": {
+          "strategy": "head_only",
+          "value": 0.08952380952380956
+        },
+        "map": {
+          "strategy": "head_only",
+          "value": 0.7861111111111112
+        }
+      },
+      "summary": {
+        "strategy_wins": {
+          "head_only": 6,
+          "adapters": 0,
+          "lora": 1
+        },
+        "overall_best": "head_only"
+      }
+    },
+    "50_samples": {
+      "strategies": [
+        "head_only",
+        "adapters",
+        "lora"
+      ],
+      "metrics": {
+        "top1_accuracy": {
+          "head_only": 0.06666667014360428,
+          "adapters": 0.06666667014360428,
+          "lora": 0.0
+        },
+        "ndcg@5": {
+          "head_only": 0.8061431581639149,
+          "adapters": 0.7822727294108852,
+          "lora": 0.7704055902382829
+        },
+        "kendall_correlation": {
+          "head_only": 0.11111111111111109,
+          "adapters": 0.031111111111111082,
+          "lora": 0.022222222222222237
+        },
+        "ndcg@3": {
+          "head_only": 0.7326655667478997,
+          "adapters": 0.6904773272624427,
+          "lora": 0.6746624061021548
+        },
+        "ndcg@1": {
+          "head_only": 0.6744587500890096,
+          "adapters": 0.6457540114720662,
+          "lora": 0.5774619817733765
+        },
+        "spearman_correlation": {
+          "head_only": 0.14666666666666664,
+          "adapters": 0.06666666666666667,
+          "lora": 0.04000000000000002
+        },
+        "map": {
+          "head_only": 0.8387962962962963,
+          "adapters": 0.8222222222222224,
+          "lora": 0.8111111111111112
+        }
+      },
+      "best_strategy": {
+        "top1_accuracy": {
+          "strategy": "head_only",
+          "value": 0.06666667014360428
+        },
+        "ndcg@5": {
+          "strategy": "head_only",
+          "value": 0.8061431581639149
+        },
+        "kendall_correlation": {
+          "strategy": "head_only",
+          "value": 0.11111111111111109
+        },
+        "ndcg@3": {
+          "strategy": "head_only",
+          "value": 0.7326655667478997
+        },
+        "ndcg@1": {
+          "strategy": "head_only",
+          "value": 0.6744587500890096
+        },
+        "spearman_correlation": {
+          "strategy": "head_only",
+          "value": 0.14666666666666664
+        },
+        "map": {
+          "strategy": "head_only",
+          "value": 0.8387962962962963
+        }
+      },
+      "summary": {
+        "strategy_wins": {
+          "head_only": 7,
+          "adapters": 0,
+          "lora": 0
+        },
+        "overall_best": "head_only"
+      }
+    }
+  },
+  "sample_efficiency": {
+    "head_only": {
+      "sample_sizes": [
+        10,
+        25,
+        50
+      ],
+      "metrics_vs_samples": {
+        "top1_accuracy": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.06666667014360428,
+            0.06666667014360428,
+            0.06666667014360428
+          ]
+        },
+        "ndcg@5": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.7374067837410507,
+            0.7612588353987715,
+            0.8061431581639149
+          ]
+        },
+        "kendall_correlation": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            -0.031111111111111103,
+            0.08444444444444447,
+            0.11111111111111109
+          ]
+        },
+        "ndcg@3": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.6627854189114967,
+            0.6837783018768937,
+            0.7326655667478997
+          ]
+        },
+        "ndcg@1": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.5788763602574666,
+            0.5392287969589233,
+            0.6744587500890096
+          ]
+        },
+        "spearman_correlation": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            -0.02095238095238096,
+            0.08952380952380956,
+            0.14666666666666664
+          ]
+        },
+        "map": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.7696666666666666,
+            0.7861111111111112,
+            0.8387962962962963
+          ]
+        }
+      },
+      "improvement_rates": {
+        "top1_accuracy": [
+          0.0,
+          0.0
+        ],
+        "ndcg@5": [
+          0.03234585331140198,
+          0.058960659210781564
+        ],
+        "kendall_correlation": [
+          -3.7142857142857157,
+          0.31578947368420984
+        ],
+        "ndcg@3": [
+          0.03167372480805927,
+          0.0714957826781225
+        ],
+        "ndcg@1": [
+          -0.0684905551867919,
+          0.25078399724335865
+        ],
+        "spearman_correlation": [
+          -5.272727272727273,
+          0.6382978723404246
+        ],
+        "map": [
+          0.021365670564458115,
+          0.06702002355712586
+        ]
+      },
+      "saturation_analysis": {
+        "top1_accuracy": "saturated",
+        "ndcg@5": "improving",
+        "kendall_correlation": "improving",
+        "ndcg@3": "improving",
+        "ndcg@1": "improving",
+        "spearman_correlation": "improving",
+        "map": "improving"
+      }
+    },
+    "adapters": {
+      "sample_sizes": [
+        10,
+        25,
+        50
+      ],
+      "metrics_vs_samples": {
+        "top1_accuracy": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.06666667014360428,
+            0.06666667014360428,
+            0.06666667014360428
+          ]
+        },
+        "ndcg@5": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.7355340130704684,
+            0.7555669196452274,
+            0.7822727294108852
+          ]
+        },
+        "kendall_correlation": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.013333333333333341,
+            -0.013333333333333341,
+            0.031111111111111082
+          ]
+        },
+        "ndcg@3": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.6605287952385129,
+            0.5769340624047546,
+            0.6904773272624427
+          ]
+        },
+        "ndcg@1": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.5692271550496419,
+            0.5178123712539673,
+            0.6457540114720662
+          ]
+        },
+        "spearman_correlation": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.013333333333333345,
+            -0.043809523809523805,
+            0.06666666666666667
+          ]
+        },
+        "map": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.7715925925925926,
+            0.7441666666666668,
+            0.8222222222222224
+          ]
+        }
+      },
+      "improvement_rates": {
+        "top1_accuracy": [
+          0.0,
+          0.0
+        ],
+        "ndcg@5": [
+          0.027235867028272576,
+          0.035345393070143165
+        ],
+        "kendall_correlation": [
+          -2.0,
+          -3.33333333333333
+        ],
+        "ndcg@3": [
+          -0.12655728779178013,
+          0.1968045782986384
+        ],
+        "ndcg@1": [
+          -0.09032384231773131,
+          0.24708108056257397
+        ],
+        "spearman_correlation": [
+          -4.285714285714283,
+          -2.5217391304347827
+        ],
+        "map": [
+          -0.035544568713099314,
+          0.10488988428518116
+        ]
+      },
+      "saturation_analysis": {
+        "top1_accuracy": "saturated",
+        "ndcg@5": "saturated",
+        "kendall_correlation": "saturated",
+        "ndcg@3": "improving",
+        "ndcg@1": "improving",
+        "spearman_correlation": "saturated",
+        "map": "improving"
+      }
+    },
+    "lora": {
+      "sample_sizes": [
+        10,
+        25,
+        50
+      ],
+      "metrics_vs_samples": {
+        "top1_accuracy": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.0,
+            0.06666667014360428,
+            0.0
+          ]
+        },
+        "ndcg@5": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.7611827086346489,
+            0.7389875463211961,
+            0.7704055902382829
+          ]
+        },
+        "kendall_correlation": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.013333333333333324,
+            0.013333333333333341,
+            0.022222222222222237
+          ]
+        },
+        "ndcg@3": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.6575688424267297,
+            0.675130178020084,
+            0.6746624061021548
+          ]
+        },
+        "ndcg@1": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.5774619817733765,
+            0.6377694845199585,
+            0.5774619817733765
+          ]
+        },
+        "spearman_correlation": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.036190476190476197,
+            0.005714285714285735,
+            0.04000000000000002
+          ]
+        },
+        "map": {
+          "sample_sizes": [
+            10,
+            25,
+            50
+          ],
+          "values": [
+            0.7756666666666666,
+            0.7817777777777777,
+            0.8111111111111112
+          ]
+        }
+      },
+      "improvement_rates": {
+        "top1_accuracy": [
+          -1.0
+        ],
+        "ndcg@5": [
+          -0.029158784167949287,
+          0.04251498428287607
+        ],
+        "kendall_correlation": [
+          1.3010426069826063e-15,
+          0.6666666666666669
+        ],
+        "ndcg@3": [
+          0.026706459400577597,
+          -0.0006928618111858761
+        ],
+        "ndcg@1": [
+          0.1044354514237953,
+          -0.09456003181459013
+        ],
+        "spearman_correlation": [
+          -0.8421052631578942,
+          5.999999999999979
+        ],
+        "map": [
+          0.007878527431600002,
+          0.03752131893121119
+        ]
+      },
+      "saturation_analysis": {
+        "ndcg@5": "saturated",
+        "kendall_correlation": "improving",
+        "ndcg@3": "saturated",
+        "ndcg@1": "diminishing",
+        "spearman_correlation": "improving",
+        "map": "saturated"
+      }
+    }
+  },
+  "parameter_efficiency": {
+    "head_only_10": {
+      "trainable_params": 307873,
+      "trainable_ratio": 0.41290152125777696,
+      "ndcg@5": 0.7374067837410507,
+      "spearman_correlation": -0.02095238095238096
+    },
+    "head_only_25": {
+      "trainable_params": 307873,
+      "trainable_ratio": 0.41290152125777696,
+      "ndcg@5": 0.7612588353987715,
+      "spearman_correlation": 0.08952380952380956
+    },
+    "head_only_50": {
+      "trainable_params": 307873,
+      "trainable_ratio": 0.41290152125777696,
+      "ndcg@5": 0.8061431581639149,
+      "spearman_correlation": 0.14666666666666664
+    },
+    "adapters_10": {
+      "trainable_params": 357889,
+      "trainable_ratio": 0.4498076413091702,
+      "ndcg@5": 0.7355340130704684,
+      "spearman_correlation": 0.013333333333333345
+    },
+    "adapters_25": {
+      "trainable_params": 357889,
+      "trainable_ratio": 0.4498076413091702,
+      "ndcg@5": 0.7555669196452274,
+      "spearman_correlation": -0.043809523809523805
+    },
+    "adapters_50": {
+      "trainable_params": 357889,
+      "trainable_ratio": 0.4498076413091702,
+      "ndcg@5": 0.7822727294108852,
+      "spearman_correlation": 0.06666666666666667
+    },
+    "lora_10": {
+      "trainable_params": 331425,
+      "trainable_ratio": 0.43087813724916635,
+      "ndcg@5": 0.7611827086346489,
+      "spearman_correlation": 0.036190476190476197
+    },
+    "lora_25": {
+      "trainable_params": 331425,
+      "trainable_ratio": 0.43087813724916635,
+      "ndcg@5": 0.7389875463211961,
+      "spearman_correlation": 0.005714285714285735
+    },
+    "lora_50": {
+      "trainable_params": 331425,
+      "trainable_ratio": 0.43087813724916635,
+      "ndcg@5": 0.7704055902382829,
+      "spearman_correlation": 0.04000000000000002
+    }
+  }
+}

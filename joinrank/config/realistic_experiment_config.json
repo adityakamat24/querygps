@@ -1,0 +1,40 @@
+{
+  "experiment_type": "realistic_complex_queries",
+  "dataset_source": "data\\imdb\\realistic_queries",
+  "complexity_levels": [
+    "low",
+    "medium",
+    "high",
+    "mixed"
+  ],
+  "evaluation_metrics": [
+    "ndcg@1",
+    "ndcg@3",
+    "ndcg@5",
+    "ndcg@10",
+    "spearman_correlation",
+    "kendall_tau",
+    "precision@1",
+    "precision@3",
+    "precision@5",
+    "mean_reciprocal_rank",
+    "hit_rate@5"
+  ],
+  "transfer_strategies": [
+    "head_only",
+    "adapters",
+    "lora"
+  ],
+  "sample_sizes": [
+    10,
+    25,
+    50,
+    100
+  ],
+  "enhanced_features": {
+    "complex_join_encoding": true,
+    "query_complexity_features": true,
+    "production_simulation": true,
+    "statistical_significance_testing": true
+  }
+}

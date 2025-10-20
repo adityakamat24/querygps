@@ -1,0 +1,298 @@
+D:\querygps\joinrank\run_simplified_advanced_experiments.py:303: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(f'models/enhanced_{strategy}_{sample_size}_best.pt'))
+======================================================================
+ENHANCED FEW-SHOT TRANSFER LEARNING EXPERIMENTS
+======================================================================
+
+=== ENHANCED HEAD_ONLY EXPERIMENT ===
+
+--- head_only with 10 samples ---
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 10 ranking examples from 10 pairwise comparisons
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 9 ranking examples from 75 pairwise comparisons
+Train dataset: 10 examples
+Val dataset: 9 examples
+Model parameters: {'total': 745633, 'trainable': 307873, 'frozen': 437760, 'trainable_ratio': 0.41290152125777696}
+Epoch  1: Train Loss: 0.9772, Val Loss: 1.0017, NDCG@5: 0.7403, Spearman: -0.3333
+Epoch  2: Train Loss: 0.9063, Val Loss: 1.0041, NDCG@5: 0.7382, Spearman: -0.3111
+Epoch  3: Train Loss: 1.0006, Val Loss: 1.0049, NDCG@5: 0.7487, Spearman: -0.3000
+Epoch  4: Train Loss: 0.8976, Val Loss: 1.0064, NDCG@5: 0.7482, Spearman: -0.3000
+Epoch  5: Train Loss: 0.8324, Val Loss: 1.0089, NDCG@5: 0.7482, Spearman: -0.3222
+Epoch  6: Train Loss: 0.8761, Val Loss: 1.0118, NDCG@5: 0.7636, Spearman: -0.2778
+Early stopping at epoch 6
+[OK] head_only with 10 samples - Final Results:
+  NDCG@5: 0.7403 +/- 0.1290
+  NDCG@3: 0.5116
+  NDCG@1: 0.3297
+  Spearman: -0.3333 +/- 0.3712
+  Best Val Loss: 1.0017
+
+--- head_only with 25 samples ---
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 25 ranking examples from 25 pairwise comparisons
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 9 ranking examples from 75 pairwise comparisons
+Train dataset: 25 examples
+Val dataset: 9 examples
+Model parameters: {'total': 745633, 'trainable': 307873, 'frozen': 437760, 'trainable_ratio': 0.41290152125777696}
+Epoch  1: Train Loss: 0.9677, Val Loss: 0.9996, NDCG@5: 0.8408, Spearman: 0.0778
+Epoch  2: Train Loss: 0.9322, Val Loss: 0.9999, NDCG@5: 0.8289, Spearman: 0.0333
+Epoch  3: Train Loss: 0.9656, Val Loss: 0.9992, NDCG@5: 0.8608, Spearman: 0.2000
+Epoch  4: Train Loss: 0.9280, Val Loss: 0.9967, NDCG@5: 0.8576, Spearman: 0.2000
+Epoch  5: Train Loss: 1.0092, Val Loss: 0.9952, NDCG@5: 0.8485, Spearman: 0.1000
+Epoch  6: Train Loss: 1.1886, Val Loss: 0.9937, NDCG@5: 0.8525, Spearman: 0.1222
+Epoch  7: Train Loss: 1.0960, Val Loss: 0.9918, NDCG@5: 0.8575, Spearman: 0.1556
+Epoch  8: Train Loss: 1.0836, Val Loss: 0.9918, NDCG@5: 0.8575, Spearman: 0.1556
+Epoch  9: Train Loss: 1.0361, Val Loss: 0.9921, NDCG@5: 0.8413, Spearman: 0.1111
+Epoch 10: Train Loss: 0.7554, Val Loss: 0.9928, NDCG@5: 0.8366, Spearman: 0.1000
+Epoch 11: Train Loss: 0.9438, Val Loss: 0.9918, NDCG@5: 0.8431, Spearman: 0.1444
+Epoch 12: Train Loss: 1.0114, Val Loss: 0.9920, NDCG@5: 0.8425, Spearman: 0.1556
+Epoch 13: Train Loss: 1.1866, Val Loss: 0.9923, NDCG@5: 0.8410, Spearman: 0.1111
+Early stopping at epoch 13
+[OK] head_only with 25 samples - Final Results:
+  NDCG@5: 0.8575 +/- 0.0964
+  NDCG@3: 0.7134
+  NDCG@1: 0.5890
+  Spearman: 0.1556 +/- 0.4374
+  Best Val Loss: 0.9918
+
+--- head_only with 50 samples ---
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 50 ranking examples from 50 pairwise comparisons
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 9 ranking examples from 75 pairwise comparisons
+Train dataset: 50 examples
+Val dataset: 9 examples
+Model parameters: {'total': 745633, 'trainable': 307873, 'frozen': 437760, 'trainable_ratio': 0.41290152125777696}
+Epoch  1: Train Loss: 1.0215, Val Loss: 0.9995, NDCG@5: 0.8543, Spearman: 0.2000
+Epoch  2: Train Loss: 0.8961, Val Loss: 0.9993, NDCG@5: 0.8569, Spearman: 0.1667
+Epoch  3: Train Loss: 1.1092, Val Loss: 0.9957, NDCG@5: 0.8670, Spearman: 0.1333
+Epoch  4: Train Loss: 0.9431, Val Loss: 0.9932, NDCG@5: 0.8290, Spearman: 0.0889
+Epoch  5: Train Loss: 0.9205, Val Loss: 0.9907, NDCG@5: 0.8234, Spearman: 0.0556
+Epoch  6: Train Loss: 0.9520, Val Loss: 0.9919, NDCG@5: 0.8210, Spearman: -0.0000
+Epoch  7: Train Loss: 0.9154, Val Loss: 0.9905, NDCG@5: 0.8366, Spearman: 0.0222
+Epoch  8: Train Loss: 0.8658, Val Loss: 0.9905, NDCG@5: 0.8246, Spearman: -0.0222
+Epoch  9: Train Loss: 1.0161, Val Loss: 0.9916, NDCG@5: 0.8070, Spearman: -0.1000
+Epoch 10: Train Loss: 1.0109, Val Loss: 0.9919, NDCG@5: 0.8236, Spearman: -0.0333
+Epoch 11: Train Loss: 1.1330, Val Loss: 0.9924, NDCG@5: 0.8236, Spearman: -0.0222
+Epoch 12: Train Loss: 0.8820, Val Loss: 0.9925, NDCG@5: 0.8236, Spearman: -0.0222
+Epoch 13: Train Loss: 0.9627, Val Loss: 0.9920, NDCG@5: 0.8236, Spearman: -0.0222
+Early stopping at epoch 13
+[OK] head_only with 50 samples - Final Results:
+  NDCG@5: 0.8246 +/- 0.1087
+  NDCG@3: 0.6227
+  NDCG@1: 0.6372
+  Spearman: -0.0222 +/- 0.4467
+  Best Val Loss: 0.9905
+
+=== ENHANCED ADAPTERS EXPERIMENT ===
+
+--- adapters with 10 samples ---
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 10 ranking examples from 10 pairwise comparisons
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 9 ranking examples from 75 pairwise comparisons
+Train dataset: 10 examples
+Val dataset: 9 examples
+Model parameters: {'total': 795649, 'trainable': 357889, 'frozen': 437760, 'trainable_ratio': 0.4498076413091702}
+Epoch  1: Train Loss: 1.0076, Val Loss: 1.0011, NDCG@5: 0.8286, Spearman: 0.0444
+Epoch  2: Train Loss: 1.0017, Val Loss: 1.0007, NDCG@5: 0.8392, Spearman: -0.0444
+Epoch  3: Train Loss: 0.9898, Val Loss: 1.0014, NDCG@5: 0.8227, Spearman: -0.0556
+Epoch  4: Train Loss: 0.9764, Val Loss: 1.0027, NDCG@5: 0.7776, Spearman: -0.1889
+Epoch  5: Train Loss: 0.9307, Val Loss: 1.0040, NDCG@5: 0.7763, Spearman: -0.2222
+Epoch  6: Train Loss: 0.9865, Val Loss: 1.0049, NDCG@5: 0.7776, Spearman: -0.2222
+Epoch  7: Train Loss: 0.9580, Val Loss: 1.0059, NDCG@5: 0.7763, Spearman: -0.2444
+Early stopping at epoch 7
+[OK] adapters with 10 samples - Final Results:
+  NDCG@5: 0.8392 +/- 0.0636
+  NDCG@3: 0.6364
+  NDCG@1: 0.4941
+  Spearman: -0.0444 +/- 0.3059
+  Best Val Loss: 1.0007
+
+--- adapters with 25 samples ---
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 25 ranking examples from 25 pairwise comparisons
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 9 ranking examples from 75 pairwise comparisons
+Train dataset: 25 examples
+Val dataset: 9 examples
+Model parameters: {'total': 795649, 'trainable': 357889, 'frozen': 437760, 'trainable_ratio': 0.4498076413091702}
+Epoch  1: Train Loss: 0.9702, Val Loss: 0.9991, NDCG@5: 0.8766, Spearman: 0.2333
+Epoch  2: Train Loss: 0.9671, Val Loss: 1.0012, NDCG@5: 0.8119, Spearman: -0.0667
+Epoch  3: Train Loss: 1.0110, Val Loss: 1.0027, NDCG@5: 0.7621, Spearman: -0.2111
+Epoch  4: Train Loss: 0.9868, Val Loss: 1.0021, NDCG@5: 0.8008, Spearman: -0.0889
+Epoch  5: Train Loss: 1.1879, Val Loss: 1.0017, NDCG@5: 0.7924, Spearman: -0.1556
+Epoch  6: Train Loss: 0.9993, Val Loss: 1.0009, NDCG@5: 0.7923, Spearman: -0.2000
+Early stopping at epoch 6
+[OK] adapters with 25 samples - Final Results:
+  NDCG@5: 0.8766 +/- 0.0805
+  NDCG@3: 0.7615
+  NDCG@1: 0.6027
+  Spearman: 0.2333 +/- 0.3559
+  Best Val Loss: 0.9991
+
+--- adapters with 50 samples ---
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 50 ranking examples from 50 pairwise comparisons
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 9 ranking examples from 75 pairwise comparisons
+Train dataset: 50 examples
+Val dataset: 9 examples
+Model parameters: {'total': 795649, 'trainable': 357889, 'frozen': 437760, 'trainable_ratio': 0.4498076413091702}
+Epoch  1: Train Loss: 0.9849, Val Loss: 0.9997, NDCG@5: 0.8066, Spearman: -0.0111
+Epoch  2: Train Loss: 1.0288, Val Loss: 1.0004, NDCG@5: 0.8015, Spearman: -0.1000
+Epoch  3: Train Loss: 1.0111, Val Loss: 1.0017, NDCG@5: 0.7748, Spearman: -0.1111
+Epoch  4: Train Loss: 1.0663, Val Loss: 1.0021, NDCG@5: 0.7847, Spearman: -0.1111
+Epoch  5: Train Loss: 0.9658, Val Loss: 1.0005, NDCG@5: 0.7968, Spearman: -0.0111
+Epoch  6: Train Loss: 1.1109, Val Loss: 1.0016, NDCG@5: 0.7940, Spearman: -0.0333
+Early stopping at epoch 6
+[OK] adapters with 50 samples - Final Results:
+  NDCG@5: 0.8066 +/- 0.1269
+  NDCG@3: 0.6363
+  NDCG@1: 0.3909
+  Spearman: -0.0111 +/- 0.5466
+  Best Val Loss: 0.9997
+
+=== ENHANCED LORA EXPERIMENT ===
+
+--- lora with 10 samples ---
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 10 ranking examples from 10 pairwise comparisons
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 9 ranking examples from 75 pairwise comparisons
+Train dataset: 10 examples
+Val dataset: 9 examples
+Model parameters: {'total': 769185, 'trainable': 331425, 'frozen': 437760, 'trainable_ratio': 0.43087813724916635}
+Epoch  1: Train Loss: 0.9986, Val Loss: 1.0012, NDCG@5: 0.7444, Spearman: -0.3556
+Epoch  2: Train Loss: 0.9795, Val Loss: 1.0023, NDCG@5: 0.7624, Spearman: -0.2778
+Epoch  3: Train Loss: 1.0533, Val Loss: 1.0028, NDCG@5: 0.7649, Spearman: -0.2556
+Epoch  4: Train Loss: 1.0677, Val Loss: 1.0037, NDCG@5: 0.7649, Spearman: -0.2556
+Epoch  5: Train Loss: 0.8287, Val Loss: 1.0052, NDCG@5: 0.7472, Spearman: -0.3222
+Epoch  6: Train Loss: 0.8822, Val Loss: 1.0059, NDCG@5: 0.7472, Spearman: -0.3222
+Early stopping at epoch 6
+[OK] lora with 10 samples - Final Results:
+  NDCG@5: 0.7444 +/- 0.1159
+  NDCG@3: 0.5032
+  NDCG@1: 0.3571
+  Spearman: -0.3556 +/- 0.3833
+  Best Val Loss: 1.0012
+
+--- lora with 25 samples ---
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 25 ranking examples from 25 pairwise comparisons
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 9 ranking examples from 75 pairwise comparisons
+Train dataset: 25 examples
+Val dataset: 9 examples
+Model parameters: {'total': 769185, 'trainable': 331425, 'frozen': 437760, 'trainable_ratio': 0.43087813724916635}
+Epoch  1: Train Loss: 0.9122, Val Loss: 1.0017, NDCG@5: 0.7700, Spearman: -0.2444
+Epoch  2: Train Loss: 0.9417, Val Loss: 1.0022, NDCG@5: 0.7929, Spearman: -0.1667
+Epoch  3: Train Loss: 1.0904, Val Loss: 1.0027, NDCG@5: 0.8093, Spearman: -0.1111
+Epoch  4: Train Loss: 1.1115, Val Loss: 1.0021, NDCG@5: 0.8252, Spearman: -0.0556
+Epoch  5: Train Loss: 0.6655, Val Loss: 1.0025, NDCG@5: 0.7884, Spearman: -0.1111
+Epoch  6: Train Loss: 0.9557, Val Loss: 1.0018, NDCG@5: 0.7904, Spearman: -0.1111
+Early stopping at epoch 6
+[OK] lora with 25 samples - Final Results:
+  NDCG@5: 0.7700 +/- 0.0997
+  NDCG@3: 0.5326
+  NDCG@1: 0.5402
+  Spearman: -0.2444 +/- 0.3624
+  Best Val Loss: 1.0017
+
+--- lora with 50 samples ---
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 50 ranking examples from 50 pairwise comparisons
+No runtime file provided, using SQL-based join order encoding
+Initialized SQL encoder with 21 tables
+Loaded 9 ranking examples from 75 pairwise comparisons
+Train dataset: 50 examples
+Val dataset: 9 examples
+Model parameters: {'total': 769185, 'trainable': 331425, 'frozen': 437760, 'trainable_ratio': 0.43087813724916635}
+Epoch  1: Train Loss: 1.0489, Val Loss: 1.0005, NDCG@5: 0.8221, Spearman: 0.0556
+Epoch  2: Train Loss: 0.9831, Val Loss: 1.0000, NDCG@5: 0.8030, Spearman: -0.1000
+Epoch  3: Train Loss: 1.0453, Val Loss: 1.0001, NDCG@5: 0.8110, Spearman: -0.0556
+Epoch  4: Train Loss: 1.0322, Val Loss: 1.0035, NDCG@5: 0.7682, Spearman: -0.2000
+Epoch  5: Train Loss: 0.9665, Val Loss: 1.0027, NDCG@5: 0.7725, Spearman: -0.1222
+Epoch  6: Train Loss: 1.0177, Val Loss: 1.0053, NDCG@5: 0.7784, Spearman: -0.1222
+Epoch  7: Train Loss: 0.9860, Val Loss: 1.0041, NDCG@5: 0.7832, Spearman: -0.0333
+Early stopping at epoch 7
+[OK] lora with 50 samples - Final Results:
+  NDCG@5: 0.8030 +/- 0.1287
+  NDCG@3: 0.6071
+  NDCG@1: 0.3485
+  Spearman: -0.1000 +/- 0.5754
+  Best Val Loss: 1.0000
+
+======================================================================
+ENHANCED EXPERIMENT RESULTS
+======================================================================
+
+[RESULTS] PERFORMANCE SUMMARY:
+==================================================
+
+>> HEAD_ONLY:
+  * 10 samples: NDCG@5=0.7403 | NDCG@3=0.5116 | NDCG@1=0.3297 | Spearman=-0.3333
+  * 25 samples: NDCG@5=0.8575 | NDCG@3=0.7134 | NDCG@1=0.5890 | Spearman=0.1556
+  * 50 samples: NDCG@5=0.8246 | NDCG@3=0.6227 | NDCG@1=0.6372 | Spearman=-0.0222
+
+>> ADAPTERS:
+  * 10 samples: NDCG@5=0.8392 | NDCG@3=0.6364 | NDCG@1=0.4941 | Spearman=-0.0444
+  * 25 samples: NDCG@5=0.8766 | NDCG@3=0.7615 | NDCG@1=0.6027 | Spearman=0.2333
+  * 50 samples: NDCG@5=0.8066 | NDCG@3=0.6363 | NDCG@1=0.3909 | Spearman=-0.0111
+
+>> LORA:
+  * 10 samples: NDCG@5=0.7444 | NDCG@3=0.5032 | NDCG@1=0.3571 | Spearman=-0.3556
+  * 25 samples: NDCG@5=0.7700 | NDCG@3=0.5326 | NDCG@1=0.5402 | Spearman=-0.2444
+  * 50 samples: NDCG@5=0.8030 | NDCG@3=0.6071 | NDCG@1=0.3485 | Spearman=-0.1000
+
+[RANKING] TOP 5 CONFIGURATIONS:
+==================================================
+1. ADAPTERS (25 samples): NDCG@5=0.8766, Spearman=0.2333
+2. HEAD_ONLY (25 samples): NDCG@5=0.8575, Spearman=0.1556
+3. ADAPTERS (10 samples): NDCG@5=0.8392, Spearman=-0.0444
+4. HEAD_ONLY (50 samples): NDCG@5=0.8246, Spearman=-0.0222
+5. ADAPTERS (50 samples): NDCG@5=0.8066, Spearman=-0.0111
+
+[ANALYSIS] IMPROVEMENT ANALYSIS:
+==================================================
+>> HEAD_ONLY: +11.4% improvement (10->50 samples)
+>> ADAPTERS: -3.9% improvement (10->50 samples)
+>> LORA: +7.9% improvement (10->50 samples)
+
+[STATS] STATISTICAL SUMMARY:
+==================================================
+>> NDCG@5 - Mean: 0.8069, Std: 0.0453
+>> NDCG@5 - Range: [0.7403, 0.8766]
+>> Spearman - Mean: -0.0802, Std: 0.1916
+>> Spearman - Range: [-0.3556, 0.2333]
+
+[COMPLETE] EXPERIMENT COMPLETED!
+[SAVE] Results saved to: results\enhanced_experiments
+[TIME] Total time: 0.2 minutes
+
+[WINNER] BEST OVERALL RESULT:
+   Strategy: ADAPTERS
+   Sample Size: 25
+   NDCG@5: 0.8766
+   NDCG@3: 0.7615
+   NDCG@1: 0.6027
+   Spearman: 0.2333
